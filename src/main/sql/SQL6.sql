@@ -7,5 +7,3 @@
 --                                LEFT JOIN orders ON users.id = orders.user_id
 --                                GROUP BY users.name) as user_totals)
 -- group by users.name
-
-SELECT email from users WHERE count(email) > 1
