@@ -1,0 +1,11 @@
+-- SELECT users.name, total_amount
+-- FROM users
+-- WHERE total_amount > (
+--         SELECT AVG(total_amount)
+--         FROM (SELECT COALESCE(SUM(orders.amount), 0) AS total_amount
+--                                FROM users
+--                                LEFT JOIN orders ON users.id = orders.user_id
+--                                GROUP BY users.name) as user_totals)
+-- group by users.name
+
+SELECT email from users WHERE count(email) > 1
