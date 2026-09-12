@@ -1,0 +1,5 @@
+-- SELECT users.name, SUM(orders.amount) AS total_amount
+-- FROM users
+--          JOIN orders ON users.id = orders.user_id
+-- GROUP BY users.name
+-- HAVING total_amount > 100

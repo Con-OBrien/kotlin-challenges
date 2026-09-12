@@ -1,0 +1,6 @@
+-- SELECT
+--     users.name,
+--     COALESCE(SUM(orders.amount), 0) AS total_amount
+-- FROM users
+-- LEFT JOIN orders ON users.id = orders.user_id
+-- GROUP BY users.name

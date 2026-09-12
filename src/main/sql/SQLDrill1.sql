@@ -1,0 +1,5 @@
+-- SELECT users.name, SUM(orders.amount) AS total_amount
+-- FROM users
+-- JOIN orders
+-- WHERE users.id = orders.user_id
+-- GROUP BY users.name
